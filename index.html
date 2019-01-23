@@ -7,10 +7,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
 	<link rel="stylesheet" type="text/css" href="css/owl.transitions.css"/>
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css"/>
-	<link rel="stylesheet" type="text/css" href="css/animate.css"/>
 	<link rel="stylesheet" type="text/css" href="css/main.css"/>
 
 
@@ -23,6 +21,11 @@
 	<script type="text/javascript" src="js/nicescroll.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/scrollTo.js"></script>
+
+	<noscript>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css'" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css'" />
+	</noscript>
 </head>
 <body>
 
@@ -294,6 +297,25 @@
 		<p class="copyright animated wow fadeIn" data-wow-duration="2s"> <strong>Pixelhint</strong>
 	</footer>
 	<!--  End Footer Section  -->
+
+
+	<script defer type="text/javascript">
+		/* First CSS File */
+		const bootstrap = document.createElement('link');
+		bootstrap.rel = 'stylesheet';
+		bootstrap.href = 'css/bootstrap.css';
+		bootstrap.type = 'text/css';
+		var godefer = document.getElementsByTagName('link')[0];
+		godefer.parentNode.insertBefore(bootstrap, godefer);
+		
+		/* Second CSS File */
+		var animations = document.createElement('link');
+		animations.rel = 'stylesheet';
+		animations.href = 'css/animate.css';
+		animations.type = 'text/css';
+		var godefer2 = document.getElementsByTagName('link')[0];
+		godefer2.parentNode.insertBefore(animations, godefer2);
+		</script>
 
 </body>
 </html>
